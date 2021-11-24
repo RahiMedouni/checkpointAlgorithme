@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var arr = ["a", "i", "u", "o", "e"];
+var nbchar = 0;
+var nbvoy = 0;
+var nbspace = 0;
+
+do{
+    var character = prompt("donner un character")
+    nbchar += 1
+    if(arr.includes(character)){
+        nbvoy += 1;
+    }
+
+    if(character == " "){
+        nbspace++;
+    }
+}while(character != ".")
+
+alert("number of characters is " + nbchar);
+alert("Number of words is " + (nbspace + 1));
+alert("number of vowels is " + nbvoy);
+
+    </script>
+</body>
+</html>
